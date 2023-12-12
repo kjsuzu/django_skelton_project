@@ -1,0 +1,37 @@
+{% load render_bundle from webpack_loader %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+{% block css %}
+  {% render_bundle 'main' 'css' %}
+{% endblock css %}
+{% block js %}
+  {% render_bundle 'main' 'js' %}
+{% endblock js %}
+  <title>{% block title %}Django Skelton Project{% endblock title %}</title>
+</head>
+<body>
+
+<div id="header">
+{% block header %}
+  <div id="title">Django Skelton Project</div>
+{% endblock header %}
+</div>
+
+{% block content %}
+{% endblock content %}
+
+<script type="text/javascript">
+{% block page_script %}
+{% endblock page_script %}
+</script>
+
+<div id="footer">
+{% block footer %}
+{% endblock footer %}
+</div>
+
+</body>
+</html>

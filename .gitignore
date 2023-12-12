@@ -1,0 +1,10 @@
+*.log
+*.swp
+__pycache__/
+db.sqlite3
+
+javascript/package-lock.json
+javascript/node_modules/
+javascript/build/
+javascript/webpack-stats-local.json
+!javascript/dist/
